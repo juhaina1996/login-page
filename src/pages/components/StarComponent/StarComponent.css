@@ -1,0 +1,50 @@
+.four-pointed-star {
+  position: fixed;
+
+  width: 1em;
+  font-size: 12em;
+  right: -122px;
+  top: 326px;
+  display: flex;
+}
+
+.four-pointed-star:before {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.four-pointed-star:after {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  background-color: white; /* White background */
+  border-radius: 50%; /* Makes it a circle */
+  position: fixed; /* For positioning the footer */
+  margin: auto; /* Centers the circle */
+  right: 21px;
+  top: 306px;
+}
+@media (max-width: 992px) {
+  .circle-container {
+    top: 291px;
+    right: 25px;
+  }
+  .four-pointed-star {
+    top: 313px;
+    right: -118px;
+  }
+}

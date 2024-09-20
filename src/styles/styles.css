@@ -1,0 +1,379 @@
+@import url(https://db.onlinewebfonts.com/c/b91f64e74662869f4fcdc7710ae15930?family=Core+Sans+NR+W01+35+Light);
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #275855;
+  overflow: hidden;
+}
+
+.login-box {
+  display: flex;
+
+  background-color: #040404;
+  border-radius: 20px;
+
+  background-image: url("../assets/backgroundGreen.svg");
+  background-position: 200px -88px;
+}
+
+.login-form {
+  flex: 1 0.1;
+  padding: 20px 10px 20px 52px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 7px 16px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background: #fff;
+  width: 100%;
+  font-size: 11px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 400px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.create-account {
+  color: #fff;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.quote-section {
+  margin: 30px;
+  flex: 1;
+  background: #42b17e;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  --card-color: #42b07d;
+  --pillar-size: 34px;
+  --big-circle-r: 20px;
+  --circle-r: 21px;
+  --circle-d: calc(var(--circle-r) * 2);
+  --circles-space: calc(var(--big-circle-r) + var(--pillar-size));
+  --circle-extend-inset: calc(var(--circle-r) + var(--circles-space));
+  --card-shadow: 0 10px 48px rgba(21, 44, 115, 0.15);
+
+  filter: drop-shadow(var(--card-shadow));
+  border-radius: 20px 0 20px 20px;
+  background: 
+   /* Big Circle Cutout */ radial-gradient(
+        circle at 100% 0%,
+        transparent var(--big-circle-r),
+        var(--card-color) calc(var(--big-circle-r) + 1px)
+      )
+      0px var(--pillar-size) / calc(100% - var(--pillar-size)) 100% no-repeat
+      no-repeat,
+    /* Top Circle  */
+      radial-gradient(
+        circle closest-side,
+        var(--card-color) 100%,
+        transparent calc(100% + 1px)
+      )
+      calc(100% - var(--circles-space)) 0 / var(--circle-d) var(--circle-d)
+      no-repeat no-repeat,
+    /* Right Circle */
+      radial-gradient(
+        circle closest-side,
+        var(--card-color) 100%,
+        transparent calc(100% + 1px)
+      )
+      100% var(--circles-space) / var(--circle-d) var(--circle-d) no-repeat
+      no-repeat,
+    /* Top Circle Extend */
+      linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0px
+      var(--circle-r) / calc(100% - var(--circles-space))
+      calc(100% - var(--circle-r)) no-repeat no-repeat,
+    /* Right Gap fill Pillar */
+      linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0px
+      0px / calc(100% - var(--circle-extend-inset)) var(--circle-d) no-repeat
+      no-repeat,
+    /* Right Circle Extend  */
+      linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 100%
+      var(--circle-extend-inset) / var(--circle-d) 100% no-repeat no-repeat,
+    /* Right Gap fill Pillar */
+      linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0
+      var(--circles-space) / calc(100% - var(--circle-r)) 100% no-repeat
+      no-repeat;
+}
+
+.author {
+  font-weight: bold;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 20px;
+}
+
+.position {
+  font-size: 12px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 30px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: start;
+  margin-left: 8%;
+  padding-right: 8%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background: none;
+  color: #fff;
+  padding: 8px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-now {
+  background: white;
+  color: #101010;
+  padding: 10px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-right: 32px;
+  position: relative;
+  --card-color: white;
+  --pillar-size: 34px;
+  --big-circle-r: 30px;
+  --circle-r: 21px;
+  --circle-d: calc(var(--circle-r) * 2);
+  --circles-space: calc(var(--big-circle-r) + var(--pillar-size));
+  --circle-extend-inset: calc(var(--circle-r) + var(--circles-space));
+  --card-shadow: 0 10px 48px rgba(21, 44, 115, 0.15);
+
+  filter: drop-shadow(var(--card-shadow));
+  border-radius: 20px 0 20px 20px;
+  background: 
+   /* Big Circle Cutout */ radial-gradient(
+        circle at 100% 0%,
+        transparent var(--big-circle-r),
+        var(--card-color) calc(var(--big-circle-r) + 1px)
+      )
+      0px var(--pillar-size) / calc(100% - var(--pillar-size)) 100% no-repeat
+      no-repeat,
+    /* Top Circle  */
+      radial-gradient(
+        circle closest-side,
+        var(--card-color) 100%,
+        transparent calc(100% + 1px)
+      )
+      calc(100% - var(--circles-space)) 0 / var(--circle-d) var(--circle-d)
+      no-repeat no-repeat,
+    /* Right Circle */
+      radial-gradient(
+        circle closest-side,
+        var(--card-color) 100%,
+        transparent calc(100% + 1px)
+      )
+      100% var(--circles-space) / var(--circle-d) var(--circle-d) no-repeat
+      no-repeat,
+    /* Top Circle Extend */
+      linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0px
+      var(--circle-r) / calc(100% - var(--circles-space))
+      calc(100% - var(--circle-r)) no-repeat no-repeat,
+    /* Right Gap fill Pillar */
+      linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0px
+      0px / calc(100% - var(--circle-extend-inset)) var(--circle-d) no-repeat
+      no-repeat,
+    /* Right Circle Extend  */
+      linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 100%
+      var(--circle-extend-inset) / var(--circle-d) 100% no-repeat no-repeat,
+    /* Right Gap fill Pillar */
+      linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0
+      var(--circles-space) / calc(100% - var(--circle-r)) 100% no-repeat
+      no-repeat;
+}
+
+.avatars {
+  display: flex;
+  margin-top: 10px;
+  justify-content: end;
+  margin-top: 111px;
+  height: 30px;
+  margin-bottom: 37px;
+  margin-right: 42px;
+  width: 224px;
+}
+
+.avatars img {
+  border-radius: 50%;
+}
+
+.habu-text {
+  font-family: "Core Sans NR W01 35 Light";
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+.enter-your-account {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.label {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+.email-container {
+  margin-bottom: 9px;
+}
+.forget-password-container,
+.create-account-container {
+  display: flex;
+  justify-content: end;
+}
+.create-account-container {
+  margin-bottom: 4%;
+}
+.googleicon {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+.facebookIcon {
+  margin-left: 8px;
+  height: 34px;
+  width: 34px;
+  margin-top: -4px;
+}
+.icons-container {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.what-our-text,
+.double-quotes {
+  font-size: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-bottom: 5px;
+  padding-top: 30px;
+}
+.double-quotes {
+  padding-top: 0px;
+}
+.search-text {
+  padding-left: 8%;
+  padding-right: 8%;
+  font-size: 11px;
+  line-height: 24px;
+}
+.arrow {
+  width: 10px;
+  height: 10px;
+}
+.get-your-text {
+  font-weight: 1000;
+  font-size: 15px;
+  padding-left: 25px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.be-among-text {
+  padding-left: 25px;
+  font-size: 12px;
+
+  padding-bottom: 20px;
+}
+.image {
+  width: 30px;
+  height: 30px;
+}
+.imageOne {
+  margin-right: -6px;
+}
+.footer-container {
+  display: flex;
+}
+.background-star {
+  position: fixed;
+  width: 166px;
+  top: 200px;
+  right: 100px;
+  border: none;
+  opacity: 0.3;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6%;
+}
+.input-box {
+  color: #000;
+}
+@media (max-width: 992px) {
+  .login-box {
+    flex-direction: column;
+    max-height: none;
+    overflow-y: scroll;
+  }
+  .login-form {
+    padding-left: 20px;
+  }
+  .what-our-text,
+  .double-quotes {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  .get-your-text {
+    font-size: 12px;
+  }
+  .circle-container {
+    top: 298px;
+  }
+  .background-star {
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .avatars {
+    margin-top: 10px;
+  }
+  .login-container {
+    height: auto;
+  }
+}
+.sign-in-button {
+  padding: 6px;
+  background-color: #42b17e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #1c4031; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
