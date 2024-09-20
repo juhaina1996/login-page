@@ -29,12 +29,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px; /* Adjust as needed */
-  height: 60px; /* Adjust as needed */
-  background-color: white; /* White background */
-  border-radius: 50%; /* Makes it a circle */
-  position: fixed; /* For positioning the footer */
-  margin: auto; /* Centers the circle */
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  margin: auto;
   right: 21px;
   top: 306px;
 }

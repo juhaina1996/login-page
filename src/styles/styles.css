@@ -331,6 +331,14 @@
     flex-direction: column;
     max-height: none;
     overflow-y: scroll;
+    margin: 20px;
+  }
+  .be-among-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .apply-now {
+    padding: 0;
   }
   .login-form {
     padding-left: 20px;
@@ -342,6 +350,8 @@
   }
   .get-your-text {
     font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .circle-container {
     top: 298px;
