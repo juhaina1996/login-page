@@ -40,10 +40,12 @@
 }
 @media (max-width: 992px) {
   .circle-container {
+    display: none;
     top: 291px;
     right: 25px;
   }
   .four-pointed-star {
+    display: none;
     top: 313px;
     right: -118px;
   }
